@@ -18,11 +18,11 @@ struct ForCreatorLifeCycleApp: App {
         .onChange(of: scenePhase) { newPhase in
             switch newPhase {
             case .active:
-                print("Foreground Active")
+                print("前台活跃 Foreground Active")
             case .inactive:
-                print("Foreground Inactive")
+                print("前台不活跃 Foreground Inactive")
             case .background:
-                print("Background")
+                print("后台 Background")
             @unknown default:
                 print("Error ")
             }
